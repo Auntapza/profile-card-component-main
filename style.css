@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variable */
+:root {
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+
+/* css */
+
+body {
+    background-color: var(--Darkcyan);
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: 0 20px 0 20 #000;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info img {
+    border-radius: 50%;
+    border: 5px solid #ffff;
+    position: relative;
+    bottom: 50px;
+}
+.info .name {
+    text-align: center;
+    margin-top: 0;
+}
+.info .name h3 span {
+    color: var(--Darkgray);
+    font-weight: 400;
+    margin-left: .2rem;
+}
+.stat-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+    gap: 3rem;
+    border-top: 1px solid var(--Darkgray);
+    padding: 2.5rem 1.7rem 0 1.7rem;
+    width: 100%;
+}
+.followers,
+.like,
+.photo {
+    text-align: center;
+}
+
+body > img {
+    z-index: -1;
+    width: 65%;
+    position: absolute;
+}
+body > img:first-child {
+    top: -50%;
+    left: -35%;
+}
+.bg-bottom-img {
+    bottom: -50%;
+    right: -35%;
+}
