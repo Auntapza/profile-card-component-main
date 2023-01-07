@@ -85,3 +85,10 @@ body > img:first-child {
     bottom: -50%;
     right: -35%;
 }
+
+.followers p,
+.like p,
+.photo p {
+    color: var(--Darkgrayishblue);
+    margin-top: .3rem;
+}
